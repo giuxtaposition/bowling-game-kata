@@ -1,0 +1,22 @@
+{
+    "name": "bowling-game-kata",
+    "version": "1.0.0",
+    "description": "bowling game kata done in typescript",
+    "main": "src/index.ts",
+    "scripts": {
+        "test": "vitest",
+        "coverage": "vitest run --coverage"
+    },
+    "keywords": [
+        "tdd",
+        "bowling",
+        "kata"
+    ],
+    "author": "giuxtaposition",
+    "license": "MIT",
+    "devDependencies": {
+        "c8": "^7.11.3",
+        "typescript": "4.7.4",
+        "vitest": "^0.15.1"
+    }
+}
