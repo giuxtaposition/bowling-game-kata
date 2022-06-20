@@ -22,4 +22,16 @@ describe("BowlingGame", () => {
         rollMany(20, 1)
         expect(game.getScore()).toEqual(20)
     })
+
+    test("one spare", () => {
+        rollSpare()
+        game.roll(3)
+        rollMany(17, 0)
+        expect(game.getScore()).toEqual(16)
+    })
+
+    const rollSpare = () => {
+        game.roll(5)
+        game.roll(5)
+    }
 })
