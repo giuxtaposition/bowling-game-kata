@@ -30,6 +30,18 @@ describe("BowlingGame", () => {
         expect(game.getScore()).toEqual(16)
     })
 
+    test("one strike", () => {
+        rollStrike()
+        game.roll(3)
+        game.roll(4)
+        rollMany(16, 0)
+        expect(game.getScore()).toEqual(24)
+    })
+
+    const rollStrike = () => {
+        game.roll(10)
+    }
+
     const rollSpare = () => {
         game.roll(5)
         game.roll(5)
