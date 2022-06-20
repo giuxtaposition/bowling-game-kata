@@ -38,6 +38,11 @@ describe("BowlingGame", () => {
         expect(game.getScore()).toEqual(24)
     })
 
+    test("perfect game", () => {
+        rollMany(12, 10)
+        expect(game.getScore()).toEqual(300)
+    })
+
     const rollStrike = () => {
         game.roll(10)
     }
